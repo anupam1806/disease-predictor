@@ -4,7 +4,6 @@ from pickle import load
 from flask import Flask, render_template,request,url_for, redirect, session
 import pymongo
 import bcrypt
-import dnspython as dns
 model = load(open('model.pkl', 'rb'))
 app = Flask(__name__)
 app.secret_key = "testing"
