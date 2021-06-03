@@ -219,6 +219,6 @@ def predict():
 
 if __name__ == '__main__':
     # app.run(threaded=True, port=5000, debug=True)
-    app.run(debug=True)
+    app.run(os.environ.get('PORT',5000),debug=True)
     
 
